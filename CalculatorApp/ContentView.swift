@@ -17,11 +17,14 @@ struct ContentView: View {
             
             VStack{
                 Text("2,971")
+                    .padding(.leading, 185)
+                    .padding(.top, 100)
                     .foregroundColor(Color.white)
                     .font(Font.system(size: 90, weight: .light))
+            
                 
-                //Create the circular buttons
                 // First Column
+                Spacer()
                 HStack {
                     ButtonView(buttonColor: "gray", Number: "C", textColor: "black")
                     SymbolButtonView(buttonColor: "gray", Symbol: "plus.forwardslash.minus", textColor: "black")
@@ -58,7 +61,7 @@ struct ContentView: View {
                         Text("0")
                             .foregroundColor(Color("white"))
                             .font(Font.system(size: 40, weight: .medium))
-                            
+                            .padding(.trailing, 100)
                     }
                     ButtonView(buttonColor: "darkGray", Number: ".", textColor: "white")
                     OrangeButtonView(Symbol: "equal")
