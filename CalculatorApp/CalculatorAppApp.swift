@@ -11,7 +11,10 @@ import SwiftUI
 struct CalculatorAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                Circle()    
+                
+            }
         }
     }
 }
